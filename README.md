@@ -13,8 +13,6 @@ The objective is to model hidden activity states from noisy accelerometer and gy
 
 The project was completed as part of a Machine Learning assignment focusing on sequential probabilistic models.
 
----
-
 ## Dataset
 
 The dataset was collected using a smartphone equipped with accelerometer and gyroscope sensors.
@@ -27,21 +25,17 @@ Each recording lasts approximately 10 seconds and includes:
 
 The recordings are divided into training and testing sets.
 
-```
 data/
 ├── train/
-│   ├── standing/
-│   ├── walking/
-│   ├── jumping/
-│   └── still/
+│ ├── standing/
+│ ├── walking/
+│ ├── jumping/
+│ └── still/
 └── test/
-    ├── standing/
-    ├── walking/
-    ├── jumping/
-    └── still/
-```
-
----
+├── standing/
+├── walking/
+├── jumping/
+└── still/
 
 ## Methodology
 
@@ -54,8 +48,6 @@ The project follows these main steps:
 5. Train the HMM using the Baum–Welch algorithm.
 6. Decode the most likely activity sequence using the Viterbi algorithm.
 7. Evaluate the model on previously unseen recordings.
-
----
 
 ## Features Extracted
 
@@ -73,8 +65,6 @@ The project follows these main steps:
 - Spectral energy
 - FFT-based features
 
----
-
 ## Technologies Used
 
 - Python
@@ -86,24 +76,16 @@ The project follows these main steps:
 - hmmlearn
 - Scikit-learn
 
----
-
 ## Results
 
 The trained Hidden Markov Model predicts the sequence of human activities from sensor observations and is evaluated using unseen recordings. Model performance is summarized using a confusion matrix together with sensitivity, specificity and overall accuracy for each activity.
 
----
-
 ## Repository Structure
 
-```
 ├── HMM_Activity_Recognition.ipynb
 ├── data/
 ├── README.md
 └── requirements.txt
-```
-
----
 
 ## Author
 
